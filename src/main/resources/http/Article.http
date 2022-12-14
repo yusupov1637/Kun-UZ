@@ -1,0 +1,79 @@
+### Create article By noderator
+POST http://localhost:8080/article/admin/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA5MjU4MjYsImlkIjoxLCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjcxMDEyMjI2LCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.GpreMjzbi_UfFgIi4tzbjiyX8MNTT6U15aGQPB1jJ-PdudnqaLhWpoc2UytGnvHhuR6_xCvui1xRkj91fzZVeQ
+
+{
+  "title": "Pyhton5",
+  "description": "Dasturlash",
+  "content": "It EDU",
+  "regionId": 1,
+  "categoryId": 1
+}
+###
+GET http://localhost:8080/article_view/encrease_to_one/f53e0d4b-47cc-445b-a58c-1b24c3e739aa
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA5MjU4MjYsImlkIjoxLCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjcxMDEyMjI2LCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.GpreMjzbi_UfFgIi4tzbjiyX8MNTT6U15aGQPB1jJ-PdudnqaLhWpoc2UytGnvHhuR6_xCvui1xRkj91fzZVeQ
+
+
+### Update Article By Moderator
+PUT http://localhost:8080/article/update/eeaa5ab2-3d2f-43bf-808d-60f76a7e1bcc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA0OTQxMjIsImlkIjo3LCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjcwNTgwNTIyLCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.7P3o-Q8cNsyUESCEw0nA8OXOCREd83Dqz95wwUOeSlmjIhvzz16EamktXwuJFI_rhjYKfzufdg6_Os5ajDGCLg
+
+{
+  "title": "Shaxmat bo'yicha jahon chempionati otkazildi",
+  "description": "Shaxmat chempionlari",
+  "content": "Shaxmat",
+  "regionId": 1,
+  "categoryId": 1,
+  "imageId":1
+}
+
+
+
+### Delete Article By Id
+DELETE http://localhost:8080/article/delete/1b1fa4d1-ca3d-497f-bb50-0dbdcfb99af6
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA0OTQxMjIsImlkIjo3LCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjcwNTgwNTIyLCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.7P3o-Q8cNsyUESCEw0nA8OXOCREd83Dqz95wwUOeSlmjIhvzz16EamktXwuJFI_rhjYKfzufdg6_Os5ajDGCLg
+
+
+### Change Status By Publisher
+GET http://localhost:8080/article/status?id=eeaa5ab2-3d2f-43bf-808d-60f76a7e1bcc&status=PUBLISHED
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA1MDQ3OTUsImlkIjoxMCwicm9sZSI6IlBVQkxJU0hFUiIsImV4cCI6MTY3MDU5MTE5NSwiaXNzIjoiTXVoYW1tYWRzb2RpcSJ9.J9AeR8bXJhHnwCSFl7cyfirMhYfCmsYUaqm5Rc37KE7v85fuRTWfPg8tguaEcqtLlPWlAyBTOqSxyKAhMyZ8EA
+
+
+### Get Last Five Article
+GET http://localhost:8080/article/last_five?status='PUBLIHSED'
+
+### Get Last 3 Article
+GET http://localhost:8080/article/last_three?status='PUBLIHSED'
+
+### Get Last 8 Article
+POST http://localhost:8080/article/last_eight
+Content-Type: application/json
+
+[
+  "c983662d-afde-4b87-9a62-4a7a9888c8cb",
+  "59c77f44-5d82-45cc-8e62-6d3742f3e3cf",
+  "ecbf04b0-6f1b-4dd9-9768-21f8dfffa354"
+]
+
+### Get Article By ID
+GET http://localhost:8080/article/get_id/eeaa5ab2-3d2f-43bf-808d-60f76a7e1bcc
+Accept-Language: RUSSIAN
+
+
+### Get 4 Articles except given article id
+GET http://localhost:8080/article/last_four/59c77f44-5d82-45cc-8e62-6d3742f3e3cf
+
+
+### Get 4 most reads articles
+GET http://localhost:8080/article/most_reads
+
+### Get Last 5 articles by region key
+GET http://localhost:8080/article/last_five/region/af0f6e19-4235-42fd-b6c8-0b176f402155
+
+### Get Articles By Region Key Pagination
+GET http://localhost:8080/article/pagination/region/af0f6e19-4235-42fd-b6c8-0b176f402155?page=2&size=2
+
+### Get Last 5 Articles By Category Key
+GET http://localhost:8080/article/last_five/category/{CategoryKey}

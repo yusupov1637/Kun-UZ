@@ -1,0 +1,26 @@
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="G'ulom.jpg"
+
+< C:\Users\user\Pictures\G'ulom.jpg
+
+
+### Get File
+GET http://localhost:8080/attach/load/4b397841-e976-4484-8378-6296f5651e9b
+
+### Get General
+GET http://localhost:8080/attach/open/4b397841-e976-4484-8378-6296f5651e9b
+
+### Download By id with origin name
+GET http://localhost:8080/attach/download/9580112b-a2cd-4aa8-90e5-ad2348c707f0
+
+
+### Get List By Pagination
+GET http://localhost:8080/attach/pagination?page=1&size=2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA0OTEwMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzA1Nzc0MzYsImlzcyI6Ik11aGFtbWFkc29kaXEifQ.6SWByJ6sMqaiainJPtOtdQIjMKvckYKEEiVddy9R0ZfkmpRUUICcmvFxqUOs97zyAtso-li2ynsRfRA4YyBTsQ
+
+### Delete by id
+DELETE http://localhost:8080/attach/delete/d6fc561e-12e4-41af-a157-3334f23f1f11
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA0OTEwMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzA1Nzc0MzYsImlzcyI6Ik11aGFtbWFkc29kaXEifQ.6SWByJ6sMqaiainJPtOtdQIjMKvckYKEEiVddy9R0ZfkmpRUUICcmvFxqUOs97zyAtso-li2ynsRfRA4YyBTsQ

@@ -1,0 +1,36 @@
+### Create Article Type
+POST http://localhost:8080/article/type
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA2NzAyMjQsImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzA3NTY2MjQsImlzcyI6Ik11aGFtbWFkc29kaXEifQ.YLETqMrmWUEuBh33coks8hlTwE2mmj5C-LjbcIs458QhgdUOZPNkHcsbDarRMPULOctIuVO6FYVCuWdXuIMkbA
+
+{
+  "nameUz": "Rossiya-Ukraina Urushi",
+  "nameRus": "Русско-украинская война",
+  "nameEng": "Russia-Ukraine War"
+}
+
+### Update Article Type By Admin
+PUT http://localhost:8080/article/type/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+{
+  "key": "Dunyo yangliklari",
+  "nameUz": "Jahon yangliklari",
+  "nameRus": "Новости мира",
+  "nameEng": "World news"
+}
+
+
+### Delete ArticleType By Id
+PUT http://localhost:8080/article/type/delete/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+### Get ArticleType List
+GET http://localhost:8080/article/type/list?page=1&size=3
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+
+### Get ArticleType By Language
+GET http://localhost:8080/article/type/language?lang=UZBEK
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA

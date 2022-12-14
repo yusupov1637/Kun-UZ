@@ -1,0 +1,10 @@
+### Create Category
+POST http://localhost:8080/category/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA5MjQ5NTgsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzEwMTEzNTgsImlzcyI6Ik11aGFtbWFkc29kaXEifQ.clxTROFK08uklRvEEx8-rwWBAymuqtO3D-YzBqQ0VH5Qi6T8Tk8yVEITFj9Oof7T97E-1vFIh5m7Skyj_No86Q
+
+{
+  "nameUz": "Dolzarb",
+  "nameRu": "  Ru Dolzarb  ",
+  "nameEng": "Eng Dolzarb"
+}

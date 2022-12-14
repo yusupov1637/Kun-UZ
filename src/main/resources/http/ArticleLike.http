@@ -1,0 +1,28 @@
+### Create Reaction
+POST http://localhost:8080/article_like/create
+Content-Type: application/json
+
+{
+  "profileId": 1,
+  "articleId": "f53e0d4b-47cc-445b-a58c-1b24c3e739aa",
+  "status": "LIKE"
+}
+
+### Update Reaction
+POST http://localhost:8080/article_like/update
+Content-Type: application/json
+
+{
+  "profileId": 11,
+  "articleId": "ecbf04b0-6f1b-4dd9-9768-21f8dfffa354",
+  "status": "DISLIKE"
+}
+
+### Remove Reaction
+POST http://localhost:8080/article_like/remove
+Content-Type: application/json
+
+{
+  "profileId": 11,
+  "articleId": "ecbf04b0-6f1b-4dd9-9768-21f8dfffa354"
+}

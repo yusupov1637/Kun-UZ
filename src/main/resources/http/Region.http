@@ -1,0 +1,35 @@
+### Create Region Type
+POST http://localhost:8080/region/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA5MjQ5NTgsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzEwMTEzNTgsImlzcyI6Ik11aGFtbWFkc29kaXEifQ.clxTROFK08uklRvEEx8-rwWBAymuqtO3D-YzBqQ0VH5Qi6T8Tk8yVEITFj9Oof7T97E-1vFIh5m7Skyj_No86Q
+
+{
+  "nameUz": "Surxondaryo",
+  "nameRus": "Сурхандарьинская",
+  "nameEng": "Surkhandarya"
+}
+
+### Update Region Type By Admin
+PUT http://localhost:8080/region/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+{
+  "key": "Bu kalit so'z",
+  "nameUz": "Qawqadaryo",
+  "nameRus": "Кашкадарья",
+  "nameEng": "Kashkadarya"
+}
+
+
+### Delete Region By Id
+PUT http://localhost:8080/region/delete/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+### Get Region List
+GET http://localhost:8080/region/list?page=1&size=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+### Get By Language
+GET http://localhost:8080/region/language?lang=UZBEK
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA

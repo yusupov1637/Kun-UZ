@@ -1,0 +1,12 @@
+### Get History By Email
+GET http://localhost:8080/email?email=boy.pacan@gmail.com
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAzNTMyNzAsImlkIjoyOSwicm9sZSI6IkFETUlOIiwiZXhwIjoxNjcwNDM5NjcwLCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.NmyVVTeO0P3qYqClj1tT24dLmHpTGLwaaZWzGAMPbcNY4FB9883qSDtEtGd5ZfYGkeyFDnGdseCwgyi7dW-51A
+
+
+### Get History by given date
+GET http://localhost:8080/email/date?date=2022-12-06
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAzNTMyNzAsImlkIjoyOSwicm9sZSI6IkFETUlOIiwiZXhwIjoxNjcwNDM5NjcwLCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.NmyVVTeO0P3qYqClj1tT24dLmHpTGLwaaZWzGAMPbcNY4FB9883qSDtEtGd5ZfYGkeyFDnGdseCwgyi7dW-51A
+
+### Get History by Pagination
+GET http://localhost:8080/email/pagination?page=0&size=5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAzNTMyNzAsImlkIjoyOSwicm9sZSI6IkFETUlOIiwiZXhwIjoxNjcwNDM5NjcwLCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.NmyVVTeO0P3qYqClj1tT24dLmHpTGLwaaZWzGAMPbcNY4FB9883qSDtEtGd5ZfYGkeyFDnGdseCwgyi7dW-51A

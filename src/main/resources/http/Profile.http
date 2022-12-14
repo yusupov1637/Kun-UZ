@@ -1,0 +1,48 @@
+### Create Profile By Admin
+POST http://localhost:8080/profile/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzA2NzAyMjQsImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzA3NTY2MjQsImlzcyI6Ik11aGFtbWFkc29kaXEifQ.YLETqMrmWUEuBh33coks8hlTwE2mmj5C-LjbcIs458QhgdUOZPNkHcsbDarRMPULOctIuVO6FYVCuWdXuIMkbA
+
+
+{
+  "name": null,
+  "surname": null,
+  "phone": "5900",
+  "password": "5900",
+  "role": "PUBLISHER",
+  "email": "gulomurolov@gmail.com",
+  "imageId": "e17d50b5-7924-4556-8298-a537ea59646b"
+}
+
+### Get Profile List By Admin
+GET http://localhost:8080/profile/list?page=1&size=2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+
+### Delete profile By Id
+PUT http://localhost:8080/profile/update/visible/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+### Update profile by ADMIN
+PUT http://localhost:8080/profile/update/admin/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDc3MTksImlkIjozLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAyOTQxMTksImlzcyI6Ik11aGFtbWFkc29kaXEifQ.7dteGzMQTE7kJNprxncTfkGpMMXM-MwNJufN4D0cskt1zRw83Jckphp6s0aJdd1C-MZZTTcgL9MS1JmTinfJCA
+
+{
+  "name": "Muhammad Sodiq",
+  "surname": "Nabijonov",
+  "status": "ACTIVE",
+  "visible": true,
+  "role": "MODERATOR"
+}
+
+### Update profile by themselves
+PUT http://localhost:8080/profile/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzAyMDg1MTQsImlkIjo1LCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjcwMjk0OTE0LCJpc3MiOiJNdWhhbW1hZHNvZGlxIn0.DYwm6I5aaRWqiY2IpMvQipb-sIF0mISrwtzMp3ZaGRKWKP5wsk7zOOtnMzfqdwvJDqXR0vAL-axAyOJXVShaDA
+
+{
+  "name": "Muhammadsodiq",
+  "surname": "Nabijonov",
+  "password": "3433"
+}
